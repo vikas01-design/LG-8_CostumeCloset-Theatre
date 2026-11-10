@@ -1,0 +1,545 @@
+{
+  "info": {
+    "_postman_id": "5792b2d3-4ea8-4117-bfff-df6da55cd897",
+    "name": "CostumeCloset Theatre API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "56499887",
+    "_collection_link": "https://go.postman.co/collection/56499887-5792b2d3-4ea8-4117-bfff-df6da55cd897?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Actors API",
+      "item": [
+        {
+          "name": "Get All Actors",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://lg-8-costumecloset-theatre-1.onrender.com/actors",
+              "protocol": "https",
+              "host": [
+                "lg-8-costumecloset-theatre-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "actors"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Actor By ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://lg-8-costumecloset-theatre-1.onrender.com/actors/1",
+              "protocol": "https",
+              "host": [
+                "lg-8-costumecloset-theatre-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "actors",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add Actor",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"actor_name\": \"Rahul\",\r\n  \"phone\": \"9876543215\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://lg-8-costumecloset-theatre-1.onrender.com/actors",
+              "protocol": "https",
+              "host": [
+                "lg-8-costumecloset-theatre-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "actors"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "updated Actor",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"actor_name\": \"Rahul Kumar\",\r\n  \"phone\": \"9876543216\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://lg-8-costumecloset-theatre-1.onrender.com/actors/1",
+              "protocol": "https",
+              "host": [
+                "lg-8-costumecloset-theatre-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "actors",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Actor",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://lg-8-costumecloset-theatre-1.onrender.com/actors/6",
+              "protocol": "https",
+              "host": [
+                "lg-8-costumecloset-theatre-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "actors",
+                "6"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Costumes API",
+      "item": [
+        {
+          "name": "Get All Costumes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://lg-8-costumecloset-theatre-1.onrender.com/costumes",
+              "protocol": "https",
+              "host": [
+                "lg-8-costumecloset-theatre-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "costumes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Costume By ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://lg-8-costumecloset-theatre-1.onrender.com/costumes/15",
+              "protocol": "https",
+              "host": [
+                "lg-8-costumecloset-theatre-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "costumes",
+                "15"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add Costume",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Royal Prince Costume\",\r\n  \"era\": \"Medieval\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://lg-8-costumecloset-theatre-1.onrender.com/costumes",
+              "protocol": "https",
+              "host": [
+                "lg-8-costumecloset-theatre-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "costumes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Updated Costume",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Royal Prince Costume Updated\",\r\n  \"era\": \"Historical\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://lg-8-costumecloset-theatre-1.onrender.com/costumes/15",
+              "protocol": "https",
+              "host": [
+                "lg-8-costumecloset-theatre-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "costumes",
+                "15"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Costume",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://lg-8-costumecloset-theatre-1.onrender.com/costumes/15",
+              "protocol": "https",
+              "host": [
+                "lg-8-costumecloset-theatre-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "costumes",
+                "15"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Hires API",
+      "item": [
+        {
+          "name": "Get All Hires",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://lg-8-costumecloset-theatre-1.onrender.com/hires",
+              "protocol": "https",
+              "host": [
+                "lg-8-costumecloset-theatre-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "hires"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Hire By ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://lg-8-costumecloset-theatre-1.onrender.com/hires/5",
+              "protocol": "https",
+              "host": [
+                "lg-8-costumecloset-theatre-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "hires",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Hire",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"actor_id\": 1,\r\n  \"costume_id\": 1,\r\n  \"hire_date\": \"2026-11-10\",\r\n  \"return_date\": \"2026-11-15\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://lg-8-costumecloset-theatre-1.onrender.com/hires",
+              "protocol": "https",
+              "host": [
+                "lg-8-costumecloset-theatre-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "hires"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Return Costume",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "https://lg-8-costumecloset-theatre-1.onrender.com/hires/5/return",
+              "protocol": "https",
+              "host": [
+                "lg-8-costumecloset-theatre-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "hires",
+                "5",
+                "return"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Hire Details",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://lg-8-costumecloset-theatre-1.onrender.com/hires/details",
+              "protocol": "https",
+              "host": [
+                "lg-8-costumecloset-theatre-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "hires",
+                "details"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "JOIN Operations",
+      "item": [
+        {
+          "name": "Get Hire Details with Actor and Costume",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://lg-8-costumecloset-theatre-1.onrender.com/hires/details",
+              "protocol": "https",
+              "host": [
+                "lg-8-costumecloset-theatre-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "hires",
+                "details"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Hires",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://lg-8-costumecloset-theatre-1.onrender.com/hires/",
+              "protocol": "https",
+              "host": [
+                "lg-8-costumecloset-theatre-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "hires",
+                ""
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "No Double Booking Challenge",
+      "item": [
+        {
+          "name": "Test 1 – Asha Hires Costume 15",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"actor_id\": 1,\r\n  \"costume_id\": 15,\r\n  \"hire_date\": \"2026-11-10\",\r\n  \"return_date\": \"2026-11-15\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://lg-8-costumecloset-theatre-1.onrender.com/hires/",
+              "protocol": "https",
+              "host": [
+                "lg-8-costumecloset-theatre-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "hires",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Test 2 – Ravi Duplicate Hire",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"actor_id\": 2,\r\n  \"costume_id\": 15,\r\n  \"hire_date\": \"2026-11-10\",\r\n  \"return_date\": \"2026-11-15\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://lg-8-costumecloset-theatre-1.onrender.com/hires/",
+              "protocol": "https",
+              "host": [
+                "lg-8-costumecloset-theatre-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "hires",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Test 3 – Return Asha's Costume",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "https://lg-8-costumecloset-theatre-1.onrender.com/hires/4/return",
+              "protocol": "https",
+              "host": [
+                "lg-8-costumecloset-theatre-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "hires",
+                "4",
+                "return"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Test 4 – Ravi Hires After Return",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"actor_id\": 2,\r\n  \"costume_id\": 15,\r\n  \"hire_date\": \"2026-11-10\",\r\n  \"return_date\": \"2026-11-15\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://lg-8-costumecloset-theatre-1.onrender.com/hires/",
+              "protocol": "https",
+              "host": [
+                "lg-8-costumecloset-theatre-1",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "hires",
+                ""
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
